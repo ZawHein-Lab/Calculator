@@ -119,7 +119,7 @@ equal.addEventListener("click",()=>{
   if((show.value).slice(-1) == "+" || (show.value).slice(-1) == "-" || (show.value).slice(-1) == "*" || (show.value).slice(-1) == "/" ){
     deleteLast();
   };
-  result.value =  eval(show.value);
+  show.value =  eval(show.value);
 });
   // console.log(show.value);
 var del = document.getElementById("del");

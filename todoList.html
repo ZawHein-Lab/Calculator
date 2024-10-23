@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .done{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card w-50 mx-auto">
+            <div class="card-body ">
+                <h3>To Do List</h3>
+                <div class="d-flex">
+                    <input type="text" id="todoValue" class="form-control me-2" placeholder="Enter to do list">
+                    <button type="button" class="btn btn-success " id="addBtn">+</button>
+                </div>
+                <div id="todoList">
+                    <!-- <div id="todoItem" class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="float-start d-flex">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="me-2">
+                            <span>This is todo text</span>
+                        </div>
+                        <div class="float-end">
+                           <button class="btn btn-light" id="edit">Edit</button>
+                           <button class="btn btn-light border-1" id="delete">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-center mt-3" id="todoItem">
+                    <div class="float-start d-flex">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="form-check me-2">
+                        <span>This is todo text</span>
+                    </div>
+                    <div class="float end">
+                        <span><button class="btn btn-info" id="edit">Edit</button></span>
+                        <span><button class="btn btn-danger" id="delete">Delete</button></span>
+                    </div>
+                    
+                </div> -->
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="counter">
+                    <span id="rate">One of Two Done</span>
+                    </div>
+                    <div class=""> 
+                        <button class="btn btn-danger" id="checkAll">CheckAll</button>
+                        <button class="btn btn-danger" id="removeAllCheck">Remove All Check</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="todoList.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="tableJquery.js"></script>
+    <style>
+        th{
+            /* width:auto; */
+            text-align: center;
+        }
+        th:nth-child(){
+            width: auto;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                        <span class="text-danger" id="message" style="display: none;">Enter name....!!!!</span>
+                    </div>
+                    <div>
+                        <label for="myan" class="form-label">Myanmar Mark</label>
+                        <input type="number" id="myan" class="form-control" placeholder="Enter between 0 and 100..">
+                        <span class="text-danger" id="myanMessage" style="display: none;">Enter number between 0 and 100....!!!!</span>
+                        <span class="text-danger" id="myanMessageNone" style="display: none;">Enter number....!!!!</span>
+                    </div>
+                    <div>
+                        <label for="eng" class="form-label">English Mark</label>
+                        <input type="number" id="eng" class="form-control"  placeholder="Enter between 0 and 100..">
+                        <span class="text-danger" id="engMessage" style="display: none;">Enter number between 0 and 100....!!!!</span>
+                        <span class="text-danger" id="engMessageNone" style="display: none;">Enter number....!!!!</span>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-success w-25" id="addBtn">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+               <table class="table">
+                <thead class="table-active">
+                    <tr>
+                        <th>Name</th>
+                        <th>Myan Mark</th>
+                        <th>Eng Mark</th>
+                        <th>Result</th>
+                        <th>Total Mark</th>
+                        <th>Myan Grade</th>
+                        <th>Eng Grade</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+               </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal box -->
+     <!-- <div class="modal fade" id="modalBox">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger">User Input Error</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   <p class="fs-5"> Please, Enter number between 0 and 100...</p>
+                </div>
+            </div>
+        </div>
+     </div> -->
+     <!-- modal box end -->
+      <!-- formErrorModal-->
+     <!-- <div class="modal fade" id="formErrorModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger">User Input Error</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   <p class="fs-5"> Please, Enter form data</p>
+                </div>
+            </div>
+        </div>
+     </div> -->
+     <!-- formErrorModal end -->
+      
+    <script src="/js/bootstrap.js"></script>   
+</body>
+</html>

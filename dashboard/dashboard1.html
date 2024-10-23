@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script src="dashboard.js"></script>
+  
+  <style>
+    p {
+      font-size: 24px;
+    }
+
+    span {
+      font-family: "Times New Roman", Times, serif;
+      color: bold;
+      font-size: 26px;
+    }
+
+    .left-content>p {
+      font-size: 26px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    .left-content>p>span {
+      font-weight: bolder;
+      color: rgb(6, 68, 110);
+    }
+
+    .sidebar {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Ko Zaw Hein</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-name="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-name="project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-name="education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-name="workExperience">Work Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  ‌
+  <div class="container-fluid" id="mainContent">
+   
+  </div>
+
+  <!-- <script>
+    $(document).ready(function () {
+      // Handle both sidebar and navbar clicks
+      $("a.nav-link").click(function () {
+        // e.preventDefault();
+        // alert("hi")
+        // Hide all content divs
+        $(".content").hide();
+
+        // Show the targeted content
+        var target = $(this).data("target");
+        $(target).fadeIn(); // Example of jQuery fadeIn for smooth display
+      });
+    });
+
+    
+  </script> -->
+  <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
